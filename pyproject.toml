@@ -1,0 +1,3 @@
+[tool.pytest.ini_options]
+testpaths = ["packages/so101_control/tests", "packages/rbt_so101_dual/tests"]
+addopts = "--import-mode=importlib"

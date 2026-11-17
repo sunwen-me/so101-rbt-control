@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rbt-so101-dual"
+version = "0.1.3"
+description = "SO101 dual-arm serial driver over the RBT Python SDK"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = ["rbt==0.8.0"]
+
+[project.optional-dependencies]
+hardware = ["feetech-servo-sdk==1.0.0", "pyserial==3.5"]
+
+[project.urls]
+Repository = "https://github.com/sunwen-me/so101-rbt-control"
+
+[tool.setuptools.packages.find]
+include = ["so101_rbt*"]
+
+[tool.setuptools]
+license-files = ["LICENSE", "NOTICE.md", "upstream/LICENSE.lerobot"]

@@ -1,0 +1,18 @@
+{
+  "description": "LeRobot SO101 new-calibration URDF; native joint angles map directly with zero offsets",
+  "rbt": {"controller_id": "so101-dual-1", "prefix": "rbt/so101/dual"},
+  "arms": {
+    "left": {
+      "urdf": "urdf/so101_new_calib.urdf",
+      "urdf_joint_names": ["shoulder_pan", "shoulder_lift", "elbow_flex", "wrist_flex", "wrist_roll"],
+      "target_frame": "gripper",
+      "joint_mapping": {"signs": [1, 1, 1, 1, 1], "offsets_deg": [0, 0, 0, 0, 0]}
+    },
+    "right": {
+      "urdf": "urdf/so101_new_calib.urdf",
+      "urdf_joint_names": ["shoulder_pan", "shoulder_lift", "elbow_flex", "wrist_flex", "wrist_roll"],
+      "target_frame": "gripper",
+      "joint_mapping": {"signs": [1, 1, 1, 1, 1], "offsets_deg": [0, 0, 0, 0, 0]}
+    }
+  }
+}
